@@ -10,4 +10,4 @@ There are four algorithms so far:
 
 - First, the algorithm finds all points within the central red square. Then, it computes the points in 1 of the blue semi-semi circles, and mirrors them 7 times without repeating the harder calculations. 
 - Full Sub-Division Solver (FSDS): An improvement over PSDS and the fastest algorithm in benchtests. It is very similar to PSDS, except for in the beginning when the central red square is divided into 4 quarters, and only the points in 1 quarter are computed. The rest just being mirrored. 
-
+- Full Sub-Division Radius Checker (FSD-RC): Uses the radius checking principle, but only solves 1/8th of the bounding AABB, and uses 8 way symmetry to fill in the rest of the circle.(This is the second fastest algorithm in bench tests).
