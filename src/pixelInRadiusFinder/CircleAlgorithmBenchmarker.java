@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class CircleAlgorithmBenchmarker {
 
     public static void main(String[] args) {
-        final int ITRS = 800;
-        final int RADIUS = 200;
+        final int ITRS = 400;
+        final int RADIUS = 300;
         final int[] VERTEX = { 300, 300 };
 
         System.out.println("Starting tests");
@@ -16,11 +16,12 @@ public class CircleAlgorithmBenchmarker {
         for (int g = 0; g < 10; g++) {
             System.out.println("\n**********ROUND " + (g + 1) + "**********");
 
-            testNRC(VERTEX, RADIUS, ITRS);
-            testPSD_RC(VERTEX, RADIUS, ITRS); // 0.735
-            testPSDS(VERTEX, RADIUS, ITRS); // 0.737
-            testFSDS(VERTEX, RADIUS, ITRS); // 0.667
-            testFSD_RC(VERTEX, RADIUS, ITRS); // 0.69
+            // testNRC(VERTEX, RADIUS, ITRS);
+            // testPSD_RC(VERTEX, RADIUS, ITRS); // 0.735
+            // testFSDS(VERTEX, RADIUS, ITRS); // 0.667
+            // testPSDS(VERTEX, RADIUS, ITRS); // 0.737
+
+            // testFSD_RC(VERTEX, RADIUS, ITRS); // 0.69
 
         }
         System.out.println("Tests completed!");
