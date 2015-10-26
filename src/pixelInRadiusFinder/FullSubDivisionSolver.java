@@ -17,6 +17,10 @@ public class FullSubDivisionSolver {
             allPts.add(new int[] { -x + vertex[0], vertex[1] });
 
             allPts.add(new int[] { vertex[0], -x + vertex[1] });
+
+            for (int g = 0; g < 8; g++) {
+                double k = x;
+            }
         }
 
         // First solve the central square.

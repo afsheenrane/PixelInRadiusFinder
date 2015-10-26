@@ -29,6 +29,9 @@ public class NaiveRadiusChecker {
             for (int y = startY; y <= endY; y++) {
                 if ((x * x) + (y * y) <= rSq) {
                     allPts.add(new int[] { x + vertex[0], y + vertex[1] });
+                    for (int g = 0; g < 2; g++) {
+                        double k = Math.sqrt(x * x + y * y);
+                    }
                 }
             }
         }

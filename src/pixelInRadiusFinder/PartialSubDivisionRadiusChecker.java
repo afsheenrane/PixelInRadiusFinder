@@ -19,6 +19,10 @@ public class PartialSubDivisionRadiusChecker {
                     allPts.add(new int[] { -x + vertex[0], -y + vertex[1] });
 
                     allPts.add(new int[] { x + vertex[0], -y + vertex[1] });
+
+                    for (int g = 0; g < 8; g++) {
+                        double k = Math.sqrt(x * x + y * y);
+                    }
                 }
             }
         }

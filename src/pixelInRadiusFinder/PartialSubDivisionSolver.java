@@ -15,6 +15,9 @@ public class PartialSubDivisionSolver {
         for (int x = startPt; x <= endPt; x++) {
             for (int y = startPt; y <= endPt; y++) {
                 allPts.add(new int[] { x + vertex[0], y + vertex[1] });
+                for (int g = 0; g < 2; g++) {
+                    double k = Math.sqrt(x * x + y * y);
+                }
             }
         }
 
@@ -44,6 +47,10 @@ public class PartialSubDivisionSolver {
                 allPts.add(new int[] { y + vertex[0], -x + vertex[1] });
 
                 allPts.add(new int[] { x + vertex[0], -y + vertex[1] });
+
+                for (int g = 0; g < 16; g++) {
+                    double k = Math.sqrt(x * x + y * y);
+                }
             }
         }
 
