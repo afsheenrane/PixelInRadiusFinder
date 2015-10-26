@@ -5,15 +5,15 @@ import java.util.ArrayList;
 public class CircleAlgorithmBenchmarker {
 
     public static void main(String[] args) {
-        final int ITRS = 5000;
-        final int RADIUS = 30;
+        final int ITRS = 800;
+        final int RADIUS = 200;
         final int[] VERTEX = { 300, 300 };
 
         System.out.println("Starting tests");
         System.out.println("Iterations: " + ITRS);
         System.out.println("Radius: " + RADIUS);
 
-        for (int g = 0; g < 5; g++) {
+        for (int g = 0; g < 10; g++) {
             System.out.println("\n**********ROUND " + (g + 1) + "**********");
 
             testNRC(VERTEX, RADIUS, ITRS);
