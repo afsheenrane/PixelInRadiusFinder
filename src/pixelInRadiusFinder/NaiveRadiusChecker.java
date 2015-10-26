@@ -15,7 +15,7 @@ public class NaiveRadiusChecker {
      * @return an arraylist of all integer based points inside the circle.
      */
     public static ArrayList<int[]> getAllPoints(int[] vertex, int r) {
-        ArrayList<int[]> allPts = new ArrayList<int[]>((int) (Math.PI * r * r));
+        ArrayList<int[]> allPts = new ArrayList<int[]>((int) (Math.PI * r * r * 1.5));
 
         int startX = -r;
         int endX = r;
@@ -25,14 +25,10 @@ public class NaiveRadiusChecker {
 
         int rSq = r * r;
 
-        int[] pt = new int[2];
-
         for (int x = startX; x <= endX; x++) {
             for (int y = startY; y <= endY; y++) {
                 if ((x * x) + (y * y) <= rSq) {
-                    pt[0] = x + vertex[0];
-                    pt[1] = y + vertex[1];
-                    allPts.add(pt);
+                    allPts.add(new int[] { x + vertex[0], y + vertex[1] });
                 }
             }
         }
